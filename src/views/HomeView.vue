@@ -4,6 +4,8 @@
     <FeautureSection/>
     <TestimonialSection/>
     <ContactSection/>
+    
+
 </div>
 </template>
 
@@ -19,6 +21,7 @@ export default {
     HeroView, FeautureSection, TestimonialSection, ContactSection
   }
 }
+
 </script>
 
 <style lang="scss">
@@ -47,6 +50,25 @@ body {
   font-family: "poppins";
   max-width: 100vw;
   overflow-x: hidden;
+}
+#back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 750px;
+  display: none;
+  background-color: rgb(7, 7, 80);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+#back-to-top:hover {
+  background-color: #00264d;
 }
 
 

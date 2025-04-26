@@ -34,7 +34,7 @@ export default {
     }
     p{
         //color: var(--primary-color);
-               color: white;
+               color:var(--primary-color);
         font-weight: bold;
     }
 }

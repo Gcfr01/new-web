@@ -20,7 +20,7 @@
           </div>
         </li>
         <li>
-          <img src="@/assets/tech2.png" alt="person">
+          <img src="@/assets/001.png" alt="person">
           <h3>Our EC House</h3>
         </li>
         <li>
@@ -32,20 +32,16 @@
           <h3>DFL Breeders</h3>
         </li>
         <li>
-          <img src="@/assets/hatch1.png" alt="person">
-          <h3>DFL Hatchery Unit</h3>
+          <img src="@/assets/002.png" alt="person">
+          <h3>DFL Processing Unit</h3>
         </li>
         <li>
           <img src="@/assets/silo.png" alt="person">
           <h3>DFL Feed Storage Silo</h3>
         </li>
         <li>
-          <img src="@/assets/pro1.png" alt="person">
-          <h3>Our Chicken Processing plant</h3>
-        </li>
-        <li>
-          <img src="@/assets/pro2.png" alt="person">
-          <h3>Our Chicken Processing plant</h3>
+          <img src="@/assets/003.png" alt="person">
+          <h3>Our Hatchery Unit</h3>
         </li>
         
       </ul>

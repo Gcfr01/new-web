@@ -20,10 +20,10 @@
          <div class="hero-right">
                 <ul class="image-grid">
                     <li>
-                        <img src="@/assets/1.png" alt="Image 1">
+                        <img src="@/assets/doc1.png" alt="Image 1">
                     </li>
                     <li>
-                        <img src="@/assets/3.png" alt="Image 2">
+                        <img src="@/assets/ab1.png" alt="Image 2">
                     </li>
                      <li>
                         <img src="@/assets/staff2.jpg" alt="Image 8">
@@ -32,11 +32,11 @@
                         <img src="@/assets/hatchery1.png" alt="Image 3">
                     </li>
                     <li>
-                        <img src="@/assets/pen200.png" alt="Image 7">
+                        <img src="@/assets/pen.png" alt="Image 7">
                     </li>
                    
                     <li>
-                        <img src="@/assets/team2.png" alt="Image 9">
+                        <img src="@/assets/team.png" alt="Image 9">
                     </li>
                     <li>
                         <img src="@/assets/process.jpg" alt="Image 4">
@@ -83,8 +83,8 @@ export default {
 
     .hero-right {
         //height: 40%;
-        width: 60%;
-       margin-left: 9em;
+        width: 100%;
+       margin-left: 2em;
 
        ul{
         display: grid;
@@ -93,9 +93,11 @@ export default {
         li{
             list-style-type: none;
             
+            
             img{
-                width: 90%;
+                width: 100%;
                 margin-bottom: 1.5em;
+            
             }
         }
        }

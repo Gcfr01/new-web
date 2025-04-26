@@ -5,7 +5,7 @@
             <div class="growths">
                 <div class="growth-1">
                     <i class="fa-solid fa-map"></i>
-                    <p>5000+ acres of FarmLand</p>
+                    <p>2000+ hectares of FarmLand</p>
                 </div>
                 <div class="growth-2">
                     <i class="fa-solid fa-people-line"></i>
@@ -13,11 +13,11 @@
                 </div>
                 <div class="growth-3">
                     <i class="fa-solid fa-egg"></i>
-                    <p>1Million+ eggs</p>
+                    <p>8Million+ DOC's</p>
                 </div>
                 <div class="growth-4">
                     <i class="fa-solid fa-kiwi-bird"></i>
-                    <p>1Million+ Chickens</p>
+                    <p>1Million+ Tons of frozen chicken</p>
                 </div>
             </div>
     </section>

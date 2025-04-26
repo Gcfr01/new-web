@@ -17,15 +17,11 @@
         <div class="our-vision">
             <div class="vision">
                 <h2>Our Vision</h2>
-                <p>To be the leading provider of premium poultry products, nurturing a healthier and more sustainable
-                    future for
-                    generations.</p>
+                <p>To Become a household name in the Nigerian Poultry.</p>
             </div>
             <div class="our-mission">
                 <h2>Our Mission</h2>
-                <p>To deliver excellence in every aspect of poultry farming, from breeding to processing, while
-                    embracing innovation,
-                    sustainability, and community growth.</p>
+                <p>To enrich the lifestyle of Nigerians through the provision of quality and affordable poultry products.</p>
             </div>
             <div class="our-motto">
                 <h2>Our Motto</h2>

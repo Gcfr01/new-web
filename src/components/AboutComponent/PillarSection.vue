@@ -2,8 +2,8 @@
    <section class="our-pillars">
 
         <div class="container">
-            <h2>Our Pillars</h2>
-            <p>Our Pillars are the foundation of our relationships with Customers, guiding every interaction with
+            <h2>Our Core Values</h2>
+            <p>Our Core values  are the foundation of our relationships with Customers, guiding every interaction with
                 integrity and
                 purpose.</p>
         </div>

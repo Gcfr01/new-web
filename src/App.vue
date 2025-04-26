@@ -1,4 +1,5 @@
 <template>
+  <div id="app">
   <NavigationSection/>
   <!-- <nav>
     <router-link to="/">Home</router-link> |
@@ -10,6 +11,14 @@
   </nav> -->
   <router-view/>
   <FooterView/>
+  <button 
+      id="back-to-top" 
+      @click="backToTop" 
+      style="display: none; position: fixed; bottom: 20px; right: 20px; z-index: 1000;"
+    >
+      ↑ Top
+    </button>
+  </div>
 </template>
 
 <script>
@@ -19,6 +28,28 @@ import NavigationSection from './components/NavigationSection.vue';
 export default{
   components:{
     FooterView, NavigationSection
+  },
+  name: 'App',
+  mounted() {
+    window.addEventListener('scroll', this.scrollFunction);
+  },
+  unmounted() {
+    window.removeEventListener('scroll', this.scrollFunction);
+  },
+  methods: {
+    scrollFunction() {
+      const button = document.getElementById('back-to-top');
+      if (button) {
+        if (window.scrollY > 300) {
+          button.style.display = 'block';
+        } else {
+          button.style.display = 'none';
+        }
+      }
+    },
+    backToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
   }
 }
 </script>

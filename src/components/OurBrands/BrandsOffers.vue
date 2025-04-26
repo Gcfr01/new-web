@@ -3,8 +3,8 @@
     <div class="offers-container">
       <h1>OUR <span>PRODUCTS</span></h1>
       <p class="we">
-        We offer a variety of poultry products including eggs, Day-Old chicks, broiler meat in different packs, family packs,
-        chicken fillets, and chicken wings. Our products are available in various formats to suit your needs.
+        We offer a variety of poultry products including Day-Old chicks, Frozen Chicken in different pack: Ivory Whole Chicken,Ivory chicken Laps, Ivory family packs,
+        Ivory chicken fillets, and Ivory chicken wings etc. Our products are available in various formats to suit your needs.
       </p>
       <div class="product-table">
         <div v-for="(product, index) in products" :key="index" :class="`prod${index + 1}`">
@@ -13,8 +13,12 @@
             <h3>{{ product.title }}</h3>
             <p>{{ product.description }}</p>
           </div>
+          
         </div>
+        
       </div>
+      <p class="bulk"> For Bulk Purchase and Distributorship across the country, send us mail: sales@daynteefarms.com or call 09040055555 or 08090705449 </p>
+
     </div>
   </section>
 </template>
@@ -28,22 +32,22 @@ export default {
         {
           imageSrc: require("@/assets/eggs.png"), // Use require only if you're using dynamic imports
           altText: "Table Eggs",
-          title: "Table Eggs",
+          title: "Hatchable Eggs",
           description: "We produce high-quality fertilized poultry eggs with exceptional hatchability, sourced from a clean and serene environment. Our advanced feed mill system ensures efficient nutrient transfer from feed to egg, guaranteeing healthy Day-Old Chicks (DOC) from our hatchery."   },
         {
-          imageSrc: require("@/assets/chicks.png"),
+          imageSrc: require("@/assets/doc1.png"),
           altText: "Dayntee Chicks",
-          title: "Dayntee Chicks",
+          title: "Dayntee Vaccinated Chicks",
           description: "We offer premium Day-Old chicks raised in a clean and controlled environment. Our advanced care and nutrition protocols ensure healthy, robust chicks with optimal growth potential, thanks to the precise feed formulations we use."
         },
         {
-        imageSrc: require("@/assets/poultchickens.png"),
+        imageSrc: require("@/assets/ab3.png"),
           altText: "Poultry Birds",
           title: "Poultry Birds",
           description: "We provide high-quality poultry birds raised in a pristine and controlled environment. Our meticulous management and advanced feeding practices ensure robust, healthy birds with exceptional growth and performance."
         },
         {
-        imageSrc: require("@/assets/whole.png"),
+        imageSrc: require("@/assets/7.png"),
           altText: "Whole Chicken",
           title: "Ivory Whole Chicken",
           description: "We provide high-quality Ivory Whole Chicken processed in an hygenic and controlled environment. Our healthy protocols and advanced processing practices ensure tender, healthy, and nutritious chicken, delivering exceptional quality and taste for our customers."
@@ -73,7 +77,7 @@ export default {
           description: "Our chicken wings are flavorful and succulent, expertly prepared to ensure top quality. Ideal for grilling, baking, or frying, they offer a delicious and versatile choice for your culinary needs."
         },
          {
-        imageSrc: require("@/assets/poultchickens.png"),
+        imageSrc: require("@/assets/8.png"),
           altText: "Laps",
           title: "Ivory Chicken Laps",
           description: "Our Ivory Chicken Laps are crafted from premium poultry, meticulously selected and processed to ensure the highest quality. These laps are perfect for creating rich, flavorful broths and soups. The bones have been expertly removed to provide a smooth, hearty consistency, making them an ideal choice for delicious and nutritious soups."
@@ -84,30 +88,30 @@ export default {
           title: "Family Pack",
           description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
         },
-        {
-          imageSrc: require("@/assets/green.jpg"),
-          altText: "Family Pack",
-          title: "Family Pack",
-          description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
-        },
-         {
-          imageSrc: require("@/assets/purple.jpg"),
-          altText: "Family Pack",
-          title: "Family Pack",
-          description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
-        },
-         {
-          imageSrc: require("@/assets/blue.jpg"),
-          altText: "Family Pack",
-          title: "Family Pack",
-          description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
-        },
-         {
-          imageSrc: require("@/assets/blue1.jpg"),
-          altText: "Family Pack",
-          title: "Family Pack",
-          description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
-        },
+        // {
+        //   imageSrc: require("@/assets/green.jpg"),
+        //   altText: "Family Pack",
+        //   title: "Family Pack",
+        //   description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
+        // },
+        //  {
+        //   imageSrc: require("@/assets/purple.jpg"),
+        //   altText: "Family Pack",
+        //   title: "Family Pack",
+        //   description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
+        // },
+        //  {
+        //   imageSrc: require("@/assets/blue.jpg"),
+        //   altText: "Family Pack",
+        //   title: "Family Pack",
+        //   description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
+        // },
+        //  {
+        //   imageSrc: require("@/assets/blue1.jpg"),
+        //   altText: "Family Pack",
+        //   title: "Family Pack",
+        //   description: "Our family packs feature a selection of premium poultry products, including broiler meat, chicken fillets, and wings. Conveniently packaged to cater to your family's needs, each pack offers quality and value for everyday meals."
+        // },
       ]
     };
   }
@@ -126,7 +130,12 @@ export default {
 
       span {
         font-weight: lighter;
+        color: blue;
       }
+    }
+    .bulk{
+      color: var(--primary-color);
+      font-weight: bold;
     }
 
     .product-table {

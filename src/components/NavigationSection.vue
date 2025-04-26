@@ -2,39 +2,36 @@
   <div class="navbar">
     <div class="container">
       <div class="header">
-        
-            <!-- <a href="index.html" class="logo">Dayntee<span>Farms</span></a> -->
-            <a href="index.html" class="logo">
-                <img class="logo-img" alt="" src="@/assets/dt_logo.jpg">
-              </a>
+        <a href="index.html" class="logo">
+          <img class="logo-img" alt="" src="@/assets/dt_logo.jpg">
+        </a>
 
-            <img id="mobile-cta" class="mobile-menu" alt="" ref="mobileMenu" src="@/assets/menu.svg" @click="toggleBar">
-      
+        <img id="mobile-cta" class="mobile-menu" alt="" ref="mobileMenu" src="@/assets/menu.svg" @click="toggleBar">
       </div>
+
       <nav ref="navs" :class="{'menu-btn' : isMenuOpen}">
-          <img id="mobile-exit" class="mobile-menu-exit" src="@/assets/exit.svg" alt="" @click="removeBar">
+        <img id="mobile-exit" class="mobile-menu-exit" src="@/assets/exit.svg" alt="" @click="removeBar">
 
-          <ul class="primary-nav">
-          <li><router-link to="/" @click="removeBar">Home</router-link></li>
-          <li><router-link to="/about"  @click="removeBar">About Us</router-link></li>
-          <li><router-link to="/brands" @click="removeBar">Our Brands</router-link></li>
-          </ul>
+        <ul class="primary-nav">
+          <li><router-link to="/" exact-active-class="active-link" @click="removeBar">Home</router-link></li>
+          <li><router-link to="/about" exact-active-class="active-link" @click="removeBar">About Us</router-link></li>
+          <li><router-link to="/brands" exact-active-class="active-link" @click="removeBar">Our Brands</router-link></li>
+        </ul>
 
-          <ul class="secondary-nav">
-          <li><router-link to="/contact" @click="removeBar">Contact</router-link></li>
-          <li class="go-premium-cta"><router-link to="/career" @click="removeBar">Careers</router-link></li>
-          </ul>
-    </nav>
+        <ul class="secondary-nav">
+          <li><router-link to="/contact" exact-active-class="active-link" @click="removeBar">Contact</router-link></li>
+          <li class="go-premium-cta"><router-link to="/career" exact-active-class="active-link" @click="removeBar">Careers</router-link></li>
+        </ul>
+      </nav>
+
       <div class="dayntee-logo">
         <img src="@/assets/DAYNTEE_FARM_LOGO.png" alt="">
       </div>
     </div>
   </div>
 </template>
-
 <script>
 export default {
-
   data() {
     return {
       isMenuOpen: false
@@ -42,30 +39,40 @@ export default {
   },
   methods: {
     toggleBar() {
-      //this.$refs.navs.classList.toggle('active');
-      //this.$refs.mobileMenu.classList.toggle('active');
-      //const navElement = this.$refs.navs;
-      //navElement.classList.toggle('menu-btn');
       this.isMenuOpen = !this.isMenuOpen;
-   
-      },
-
-      removeBar(){
-        const navElement = this.$refs.navs;
-        navElement.classList.toggle('menu-btn');
-   
-
-      }
-      
-  },
-
+    },
+    removeBar() {
+      const navElement = this.$refs.navs;
+      navElement.classList.toggle('menu-btn');
+    }
+  }
 }
 </script>
-
 <style lang="scss">
 .header {
   display: flex;
   justify-content: space-between;
+}
+a {
+  color: #444;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5em 1em;
+  border-radius: 5px; /* Smooth rounded corners */
+}
+
+a:hover {
+  color: #c0392b; /* Slightly lighter red */
+  background-color: #f8f8f8; /* Light gray background on hover */
+  border-bottom: 2px solid #c0392b;
+}
+
+.active-link {
+  color: red !important;
+  font-weight: bold;
+  border-bottom: 2px solid red;
+  background-color: #ffe6e6; /* Light red background for active */
+  border-radius: 5px;
 }
 
 .navbar {
@@ -97,14 +104,17 @@ export default {
   list-style-type: none;
   padding: 0;
   margin: 0;
+
 }
 
 .navbar nav ul .nav-link {
   text-decoration: none;
+
 }
 
 .navbar nav ul .nav-link.active {
   font-weight: bold;
+  
 }
 
 .navbar .dayntee-logo {
@@ -123,7 +133,7 @@ export default {
 }
 
 a {
-  color: #444444;
+  color:  rgb(7, 7, 80);
 }
 
 nav.menu-btn {
@@ -131,18 +141,27 @@ nav.menu-btn {
 }
 
 nav {
-  position: fixed;
-  z-index: 999;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* make sure it stays above everything */
+  background-color: #ffffff; /* white background for clarity */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* subtle shadow */
+
   width: 66%;
   right: 0;
-  top: 0;
-  background: #333;
+  
   height: 100vh;
   padding: 1em;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+  
+
 }
 
 nav ul.primary-nav {
   margin-top: 5em;
+  
 }
 
 nav li a {
@@ -157,6 +176,11 @@ nav li a {
 nav li a:hover {
   font-weight: bold;
 }
+nav li a.active {
+  color: red; /* Red color for active tab */
+  font-weight: bold;
+}
+
 
 nav .mobile-menu-exit {
   float: right;
@@ -173,9 +197,7 @@ nav .mobile-menu-exit {
     
     width: 100vw;
     height: auto;
-    .header{
-      
-    }
+  
   .logo img {
     
     top: 0;
@@ -253,6 +275,8 @@ nav .mobile-menu-exit {
 
   nav {
     margin-right: 5em;
+    
+    
   }
 }
 </style>

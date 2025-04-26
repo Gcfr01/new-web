@@ -1,14 +1,15 @@
 <template>
   <section class="features-section">
         <div class="container">
-            <h2>Our Services</h2>
+            <h2>Our Products and Services</h2>
             <ul class="features-list">
-                <li>Quality and Affordable Poultry products</li>
-                <li>Chicken Processing</li>
+                <li>Day Old Chics</li>
+                <li>Frozen Chicken</li>
                 <li>Poultry Breeding</li>
                 <li>Hatching Operation</li>
                 <li>Broiler Fattening</li>
                 <li>Feedmill</li>
+                <li>Technical Services to DOC Customers</li>
             </ul>
 
         </div>
@@ -44,6 +45,7 @@ ul.features-list li {
   margin-bottom: 1em;
   margin-left: 2em;
   position: relative;
+  list-style-type: none;
 }
 
 ul.features-list li:before {
@@ -54,7 +56,7 @@ ul.features-list li:before {
   background-image: url("/src/assets/bullet.svg");
   background-size: contain;
   margin-right: 0.5em;
-  left: -2em;
+  left: 1em;
 }
 
 .features-section img {

@@ -1,6 +1,6 @@
 <template>
     <section class="more-info">
-            <div class="more-info-container">
+            <!-- <div class="more-info-container">
                 <h1>DAYNTEE FARM <SPAN>INFORMATION</SPAN></h1>
                     <p><span>Dayntee Farms</span> is a state-of-the-art integrated poultry operation, specializing in
                         the
@@ -18,10 +18,10 @@
                         to
                         national economic
                         development.</p>
-            </div>
-            <section class="office-house">
+            </div> -->
+            <!-- <section class="office-house">
 
-            </section>
+            </section> -->
         </section>
 </template>
 

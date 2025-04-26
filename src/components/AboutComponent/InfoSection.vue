@@ -10,18 +10,18 @@
                 <div class="Contacts">
                     <h5>Contacts</h5>
                     <p>Email: info@daynteefarms.com</p>
-                    <p>Mobile: +234 (904) 005 5555, +234 (908) 071 </p>
+                    <p>Mobile: +234 (904) 005 5555, +234 (904)000 5037  </p>
 
                 </div>
                 <div class="links">
                     <h5>Quick links</h5>
                     <div class="links-nav">
-                        <a href="https://web.facebook.com/DaynteeFarmsLtd"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61566666213217"><i class="fa-brands fa-facebook"></i></a>
                         <a href="https://www.instagram.com/daynteefarmsltd/"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.youtube.com/watch?v=eFix_48PfKU"><i class="fa-brands fa-youtube"></i></a>
                         <a href=" https://www.linkedin.com/company/dayntee-farms-limited/?originalSubdomain=ng"><i
                                 class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://x.com/DaynteeFarms"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://x.com/Ivory_chicken"><i class="fa-brands fa-twitter"></i></a>
                     </div>
 
                 </div>

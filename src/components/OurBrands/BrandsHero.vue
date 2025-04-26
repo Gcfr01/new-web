@@ -1,7 +1,7 @@
 <template>
   <section class="brands-hero">
             <h2>Dayntee</h2>
-            <h3>Farm</h3>
+            <h3>Farms</h3>
             <h4>Limited</h4>
 
             <p>
@@ -23,8 +23,8 @@ export default {
     --primary-color: #CA0407;
 }
     .brands-hero {
-    background-image: url(/src/assets/doc1.png);
-    background-size: cover;
+    background-image: url(/src/assets/wh5.jpg);
+    background-size:cover;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -33,29 +33,30 @@ export default {
 
     h2 {
         //color: var(--primary-color);
-        color:#011f80;
+        color:#CA0407;
         font-size: 3em;
     }
 
     h3 {
         //color: var(--primary-color);
-        color:#011f80;
+        color:white;
         font-size: 2em;
         margin-top: -1.5em;
     }
 
     h4 {
        // color: var(--primary-color);
-       color:#011f80;
+       color:#CA0407;
         font-size: 1.5em;
         margin-top: -1.5em;
         margin-bottom: 5em;
     }
 
     p {
-        //color: var(--primary-color);
-        color:#011f80;
-        line-height: 20px;
+        color: var(--primary-color);
+        
+        line-height: 30px;
+        background-color: white ;
     }
 
     }
